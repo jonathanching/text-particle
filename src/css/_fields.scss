@@ -1,0 +1,62 @@
+/**
+ * ==================================================================================
+ * Fields
+ * ==================================================================================
+ */
+
+/**
+ * @Variables
+ * ==================================================================================
+ */
+
+$btn-def: $bg-blue;
+$btn-hover: #313131;
+
+
+/**
+ * @Extends
+ * ==================================================================================
+ */
+
+//
+
+
+/**
+ * @Buttons
+ * ==================================================================================
+ */
+
+.txt-particle-btn {
+	width: 100%;
+    border-style: solid;
+    background-color: $bg-blue;
+    border-color: $bg-blue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+
+    @include transition(all 0.2s ease);
+}
+
+.txt-particle-btn:hover {
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+}
+
+
+/**
+ * @Inputs
+ * ==================================================================================
+ */
+
+.txt-particle-input {
+    border: none;
+    border-bottom: 3px solid $font-color;
+    background: transparent;
+    outline: none;
+    color: $font-color;
+}
+
+.txt-particle-checkbox {
+	margin-right: 10px;
+}

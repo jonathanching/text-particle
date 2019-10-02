@@ -1,0 +1,10 @@
+/node_modules
+/dist
+/gh-pages
+
+.env
+
+*.sql
+*.csv
+*.sh
+*.tar.xz

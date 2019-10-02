@@ -1,0 +1,61 @@
+/**
+ * ==================================================================================
+ * Typography
+ * ==================================================================================
+ */
+
+
+/**
+ * @Variables
+ * ==================================================================================
+ */
+
+$font-color: #020120;
+
+
+/**
+ * @Extends
+ * ==================================================================================
+ */
+
+//
+
+
+/**
+ * @Styles
+ * ==================================================================================
+ */
+
+h1, h2, h3, h4, h5, h6,
+p, a {
+	font-family: inherit;
+    color: white;
+
+    @include select(none);
+}
+
+h1 { font-size: 5em; }
+h2 { font-size: 4em; }
+h3 { font-size: 3em; }
+h4 { font-size: 2em; }
+h5 { font-size: 1em; }
+
+p {
+	font-size: .8em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+label {
+	font-size: .8em;
+}
+
+input {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+button {
+	font-weight: bold;
+	text-transform: uppercase;
+}

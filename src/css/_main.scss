@@ -1,0 +1,109 @@
+/**
+ * ==================================================================================
+ * Main stylesheet
+ * ==================================================================================
+ */
+
+/**
+ * @Extend
+ * ============================================================
+ */
+
+%control-border {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+
+/**
+ * @Styles
+ * ============================================================
+ */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: $bg-blue;
+}
+
+#main {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    canvas {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    $control-bg: white;
+
+    #controls {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+
+        .controls__border {
+            position: relative;
+            width: 25%;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+            background: $control-bg;
+            border-radius: 0 10px 0 0;
+
+            @extend %control-border;
+            @include transition(all 0.15s ease);
+            @include transform(translateY(100%));
+
+            .controls__label {
+                text-align: center;
+                margin: 0 0 5px 0;
+                color: $font-color;
+            }
+
+            .txt-particle-input {
+                width: 100%;
+                text-align: center;
+                margin: 0 0 15px 0;
+            }
+
+            .txt-particle-checkbox {
+                margin: 0 10px 0 10px;
+            }
+
+            .txt-particle-btn {
+                margin-top: 20px;
+                height: 30px;
+            }
+
+
+            .controls__btn {
+                position: absolute;
+                font-weight: bold;
+                font-size: .7em;
+                left: -2px;
+                bottom: 100%;
+                margin: 0;
+                padding: 5px 10px;
+                background: $control-bg;
+                color: $font-color;
+                cursor: pointer;
+                border-radius: 10px 10px 0 0;
+
+                @extend %control-border;
+            }
+        }
+
+        .controls__border--visible {
+            @include transform(translateY(0%));
+        }
+    }
+}
