@@ -53,6 +53,7 @@ html, body {
         .controls__border {
             position: relative;
             width: 25%;
+            min-width: 300px;
             margin: 0 auto;
             padding: 10px;
             text-align: center;
