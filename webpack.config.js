@@ -48,7 +48,7 @@ module.exports = (env, argv) => {
             /**
              * For github purposes!
              */
-            // publicPath: './text-particles/',
+            // publicPath: './text-particle/',
             // path: path.resolve(__dirname, 'gh-pages')
 
         },
