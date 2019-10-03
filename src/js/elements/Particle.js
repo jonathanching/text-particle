@@ -13,14 +13,13 @@ import Vector2 from '../libs/Vector2.js';
 
 export default class Particle {
 
-    constructor(context, x, y, speed = 0, direction = 0, gravity = 0) {
+    constructor(context, x, y, speed = 0, direction = 0) {
         this.context = context;
         this.position = new Vector2(x, y);
         this.velocity = new Vector2(0, 0);
 
         this.velocity.setLength(speed);
         this.velocity.setAngle(direction);
-        this.gravity = new Vector2(0, gravity);
 
 
         this.init();
@@ -36,12 +35,9 @@ export default class Particle {
     init() {
         /* Set default collections */
         this.springs = [];
-        this.gravitations = [];
 
         /* Set default values */
         this.radius = PARTICLEATTR.density / 2;
-        this.mass = 1;
-        this.bounce = 0;
         this.friction = null;
 
         this.color = this.getColor();
@@ -165,10 +161,6 @@ export default class Particle {
         /* Subtract friction to current velocity */
         if(this.friction)
             this.velocity.multiplyBy(this.friction);
-
-        /* Add gravity to current velocity */
-        this.velocity.addTo(this.gravity);
-
 
 
         /* Add velocity to current position */
