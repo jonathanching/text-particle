@@ -159,8 +159,9 @@ export default class Particle {
 
 
         /* Subtract friction to current velocity */
-        if(this.friction)
+        if(this.friction) {
             this.velocity.multiplyBy(this.friction);
+        }
 
 
         /* Add velocity to current position */

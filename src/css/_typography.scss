@@ -28,7 +28,7 @@ $font-color: #020120;
 
 h1, h2, h3, h4, h5, h6,
 p, a {
-	font-family: inherit;
+	font-family: 'Arial';
     color: white;
 
     @include select(none);
