@@ -1,7 +1,7 @@
 {
-    "name": "sprint-demo",
+    "name": "text-particle",
     "version": "1.0.0",
-    "description": "Sprint - Demo",
+    "description": "Text Particle",
     "private": true,
     "main": "./src/js/app.js",
     "scripts": {
